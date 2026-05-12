@@ -17,3 +17,8 @@ for unlabeled patient data. The generated masks will then be analyzed and evalua
 segmentation metrics and visual comparison methods. In addition to the AI component, the project 
 also includes data acquisition, preprocessing, exploratory data analysis, visualization, and model 
 evaluation to create a complete advanced data analytics and artificial intelligence workflow.
+
+Team Members:
+- Melisa Ata
+- Julia Hampersberger
+- Sabrina Staud
