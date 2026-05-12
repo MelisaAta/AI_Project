@@ -1,4 +1,4 @@
-# AI_Project - Breast Cancer Segmentation – Semi Supervised AI System
+# AI_Project: Breast Cancer Segmentation – Semi Supervised AI System
 
 This project focuses on the development of a semi-supervised artificial intelligence system for 
 automatic tumor region generation in breast MRI images. The project is based on a medical imaging 
