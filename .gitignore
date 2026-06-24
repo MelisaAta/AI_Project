@@ -1,0 +1,78 @@
+# =============================================================================
+# .gitignore – AI Project: Breast Cancer Segmentation
+# =============================================================================
+
+# ----------------------------------------------------------------------------
+# Large data files – never push to GitHub
+# ----------------------------------------------------------------------------
+data/processed/
+data/raw/
+data/intermediate_caches/
+
+# Large binary formats
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# DICOM files
+*.dcm
+*.dicom
+
+# Trained model files
+*.keras
+*.pb
+*.onnx
+results/models/
+results/checkpoints/
+
+# ----------------------------------------------------------------------------
+# Python
+# ----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# ----------------------------------------------------------------------------
+# Jupyter Notebooks
+# ----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ----------------------------------------------------------------------------
+# OS files
+# ----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------------------------------------------------
+# VSCode
+# ----------------------------------------------------------------------------
+.vscode/settings.json
+.vscode/launch.json
+
+# ----------------------------------------------------------------------------
+# What IS pushed to GitHub
+# ----------------------------------------------------------------------------
+# ✓ notebooks/         – all .ipynb files
+# ✓ src/               – all .py source files
+# ✓ results/plots/     – small output images/figures
+# ✓ *.xlsx             – Excel clinical data file
+# ✓ requirements.txt   – package list
+# ✓ README.md          – documentation
+# ✓ .gitignore         – this file
