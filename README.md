@@ -86,19 +86,33 @@ The large data lives outside the repository, on the external SSD:
 
 ## Requirements
 
+### Python environment
+
+The notebooks were written and executed with **Python 3.11.11** inside a
+**WSL (Ubuntu)** environment. As long as the dependencies in `requirements.txt` and the
+correct Python version are used, the code runs without further changes.
+
+The WSL setup was chosen to obtain a Linux environment on Windows in which
+**TensorFlow**, **CUDA** and **cuDNN** are mutually compatible, which is considerably
+easier to achieve on Linux than on native Windows. The environment was set up following
+this tutorial: <https://www.youtube.com/watch?v=1u1OK54J7D8&list=WL&index=31&t=2171s>
+
+### Dependencies
+
 - Python 3.11.11
 - TensorFlow 2.17
 - NumPy, pandas, pydicom, matplotlib
 - OpenCV (`opencv-python`); SciPy is used as a fallback if OpenCV is missing
 
-Install the dependencies from `requirements.txt`:
+Install them into a fresh virtual environment:
 
 ```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The core packages are TensorFlow, NumPy, pandas, pydicom, matplotlib and OpenCV
-(`opencv-python`); SciPy is used as a fallback if OpenCV is missing.
+### Hardware
 
 A GPU is recommended but not required. The models were trained on a 6 GB GPU, which is
 why a reduced base width (32) and mixed-precision training are used. Training also runs
